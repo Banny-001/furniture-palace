@@ -1,17 +1,17 @@
 <template>
    <!-- <div class="navbar"> -->
-    <v-app-bar :elevation="2" color="red"  >
+    <v-app-bar :elevation="2" color="#F7D4BC"  >
   <template v-slot:prepend>
     <v-app-bar-nav-icon ></v-app-bar-nav-icon> 
   </template>
   
   <v-app-bar-title class="title">Furniture Palace 🪑</v-app-bar-title>
-  <v-btn to="/">Home</v-btn>
+  <v-btn style="background-color:#fff"  to="/" >Home</v-btn>
   
-  <v-btn  color="white"to="/Products">Products</v-btn>
-  <v-btn to="/AboutUs">About us</v-btn>
+  <v-btn style="background-color:#fff" to="/Products">Products</v-btn>
+  <v-btn style="background-color:#fff"  to="/AboutUs">About us</v-btn>
  
-  <v-btn to="/Cart">
+  <v-btn style="background-color:#fff" to="/Cart">
   Cart
   <v-badge  color="red" :content="cart.length">
     <v-icon>mdi-store-outline</v-icon>
@@ -32,14 +32,15 @@
   }
   </script>
   <style>
-  .navbar{
-    background-color: rgb(194, 17, 158);
-  }
+ 
   .title{
     color: rgb(101, 10, 10);
     font-size: larger;
     font-family: 'Times New Roman', Times, serif;
     font-weight:bolder
+  }
+  button:hover{
+       background-color: brown;
   }
   
 </style>
