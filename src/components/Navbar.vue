@@ -1,11 +1,11 @@
 <template>
-   <div class="navbar">
-    <v-app-bar :elevation="2"  >
+   <!-- <div class="navbar"> -->
+    <v-app-bar :elevation="2" color="red"  >
   <template v-slot:prepend>
     <v-app-bar-nav-icon ></v-app-bar-nav-icon> 
   </template>
   
-  <v-app-bar-title class="title">Furniture Palace</v-app-bar-title>
+  <v-app-bar-title class="title">Furniture Palace 🪑</v-app-bar-title>
   <v-btn to="/">Home</v-btn>
   
   <v-btn  color="white"to="/Products">Products</v-btn>
@@ -13,12 +13,12 @@
  
   <v-btn to="/Cart">
   Cart
-  <v-badge content="cart.length">
+  <v-badge  color="red" :content="cart.length">
     <v-icon>mdi-store-outline</v-icon>
   </v-badge>
   </v-btn>
    </v-app-bar>
-   </div>
+   <!-- </div> -->
   </template>
   <script>
   import { mapGetters } from 'vuex'

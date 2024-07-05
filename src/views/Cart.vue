@@ -2,7 +2,7 @@
 <v-card class="mx-auto" width="auto" >
     <v-card-text class="bg-surface-light pt-4">
         <v-card-title 
-         >Cart{{ total }}
+         >cart{{ total }}
             <v-btn 
             background-color="red"
             text="Checkout"
